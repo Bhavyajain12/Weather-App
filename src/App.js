@@ -36,7 +36,7 @@ function App()
       <div className="content">
         <div className="location">
           <MapPin></MapPin>
-          <h2>{weather.name}<span>({weather.sys.country})</span>
+          <h2>{weather.name} <span>({weather.sys.country})</span>
           </h2>
         </div>
         <p className="datetext">{renderDate()}</p>
@@ -49,7 +49,7 @@ function App()
 
       <div className="temStats">
         <h1>{Math.floor(weather.main.temp)}<span>&deg;c</span>
-        <h3>Feels like{weather.main.feels_like}<span>&deg;c</span></h3>
+        <h3>Feels like {weather.main.feels_like}<span>&deg;c</span></h3>
         </h1>
       </div>
 
