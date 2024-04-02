@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    padding: 10px;
+    padding-bottom : 10px
+}
+.App {
+  background: linear-gradient(108deg, #821ea9, #7c43e0);
+    width: 400px;
+    padding: 25px;
+    color: #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px 0px rgba(0,0,0,0.2);
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+.App h1{
+  text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+.input-wrapper{
+  display: flex;
+}
+.input-wrapper input{
+  width: 100%;
+    outline: none;
+    padding: 8px;
+    height: 25px;
+    font-size: 15px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.input-wrapper button{
+  background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    width: 65px;
+}
+.content{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  background: linear-gradient(262deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+  margin-top: 10px;
+  border-radius: 10px
 }
-
-.App-link {
-  color: #61dafb;
+.location{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.location h2{
+  margin: 0;
+    margin-left: 10px;
+    font-weight: 300;
+}
+.location h2 span{
+  font-size: 15px;
+}
+.weather-desp h3{
+  margin: 0;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.temStats{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px;
+}
+.temStats h1{
+  font-size: 64px;
+    font-weight: 200;
+    margin: 0;
+}
+.temStats span{
+  font-size: 35px;
+}
+.temStats h3{
+  font-weight: 300;
+  font-size: 23px;
+  margin-top: 10px
+}
+.windStats{
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.windStats h3{
+  font-weight: 300;
+  margin-left: 10px;
 }
