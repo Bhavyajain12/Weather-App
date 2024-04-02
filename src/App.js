@@ -48,7 +48,7 @@ function App()
       </div>
 
       <div className="temStats">
-        <h1>{weather.main.temp} <span>&deg;c</span>
+        <h1>{Math.floor(weather.main.temp)}<span>&deg;c</span>
         <h3>Feels like{weather.main.feels_like}<span>&deg;c</span></h3>
         </h1>
       </div>
